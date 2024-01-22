@@ -1,9 +1,17 @@
+<script setup>
+import { ref } from 'vue';
+import VueFeather from 'vue-feather';
+
+const showLinmas = ref(false);
+const showSatpol = ref(false);
+const showDamkar = ref(false);
+</script>
 <template>
   <div>
     <div>
       <h1 class="text-center text-4xl font-semibold" id="sejarah">Sejarah</h1>
     </div>
-    <div class="md:w-[60%] mx-auto w-[95%]">
+    <div class="md:w-[70%] mx-auto w-[95%]">
       <swiper
         :slidesPerView="1"
         :spaceBetween="30"
@@ -21,8 +29,72 @@
         :modules="modules"
         class="swiper"
       >
-        <swiper-slide class="w-full"> asdsad</swiper-slide>
-        <swiper-slide class="w-full bg-red-600">sadad </swiper-slide>
+        <!-- LINMAS -->
+        <swiper-slide class="w-full flex justify-center items-center px-4">
+          <div class="bg-slate-300/90 w-[90%] py-8 my-4 rounded-lg shadow-lg flex">
+            <img src="../../public/Linmas_Logo.png" alt="logo linmas" class="w-1/5 mx-5 h-40" />
+            <div class="bg-white/50 pl-4 w-3/4 shadow-lg rounded-l-xl">
+              <h1 class="text-2xl font-semibold mt-10">Perlindungan Masyarakat</h1>
+              <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
+              <p v-if="!showLinmas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nihil? ...</p>
+              <div class="flex justify-end">
+                <button v-if="!showLinmas" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showLinmas = !showLinmas">Read more..</button>
+              </div>
+              <div v-if="showLinmas" class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro, ducimus quos nobis est omnis repellat nisi reprehenderit dignissimos numquam nam. Ipsum molestiae nemo nesciunt non quos! Veniam odio reiciendis, a
+                aspernatur repellendus quibusdam vel maiores, atque labore culpa consequatur, eius aliquid error minus praesentium blanditiis sequi ipsum? Modi, error.
+              </div>
+              <div class="flex justify-end">
+                <button v-if="showLinmas" class="btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showLinmas = !showLinmas">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <!-- SATPOL -->
+        <swiper-slide class="w-full flex justify-center items-center px-4">
+          <div class="bg-slate-300/90 w-[90%] py-8 my-4 rounded-lg shadow-lg flex">
+            <img src="../../public/Satpol-PP-logo.png" alt="logo linmas" class="w-1/4 h-40" />
+            <div class="bg-white/50 pl-4 w-3/4 shadow-lg rounded-l-xl">
+              <h1 class="text-2xl font-semibold mt-10">Satuan Polisi Pamong Praja</h1>
+              <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
+              <p v-if="!showSatpol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nihil? ...</p>
+              <div class="flex justify-end">
+                <button v-if="!showSatpol" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showSatpol = !showSatpol">Read more..</button>
+              </div>
+              <div v-if="showSatpol" class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro, ducimus quos nobis est omnis repellat nisi reprehenderit dignissimos numquam nam. Ipsum molestiae nemo nesciunt non quos! Veniam odio reiciendis, a
+                aspernatur repellendus quibusdam vel maiores, atque labore culpa consequatur, eius aliquid error minus praesentium blanditiis sequi ipsum? Modi, error.
+              </div>
+              <div class="flex justify-end">
+                <button v-if="showSatpol" class="btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showSatpol = !showSatpol">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <!-- DAMKAR -->
+        <swiper-slide class="w-full flex justify-center items-center px-4">
+          <div class="bg-slate-300/90 w-[90%] py-8 my-4 rounded-lg shadow-lg flex">
+            <img src="../../public/damkar.png" alt="logo linmas" class="w-1/4 h-40" />
+            <div class="bg-white/50 pl-4 shadow-lg rounded-l-xl w-3/4">
+              <h1 class="text-2xl font-semibold mt-10">Pemadam Kebakaran</h1>
+              <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
+              <p v-if="!showDamkar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nihil? ...</p>
+              <div class="flex justify-end">
+                <button v-if="!showDamkar" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showDamkar = !showDamkar">Read more..</button>
+              </div>
+
+              <div v-if="showDamkar" class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro, ducimus quos nobis est omnis repellat nisi reprehenderit dignissimos numquam nam. Ipsum molestiae nemo nesciunt non quos! Veniam odio reiciendis, a
+                aspernatur repellendus quibusdam vel maiores, atque labore culpa consequatur, eius aliquid error minus praesentium blanditiis sequi ipsum? Modi, error.
+              </div>
+              <div class="flex justify-end">
+                <button v-if="showDamkar" class="btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showDamkar = !showDamkar">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
       </swiper>
     </div>
   </div>
@@ -54,3 +126,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: translateY(100%);
+}
+</style>
