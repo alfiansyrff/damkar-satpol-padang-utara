@@ -6,7 +6,7 @@ import AboutUs from '@/components/AboutUs.vue';
 </script>
 
 <template>
-  <main>
+  <main class="font-sans bg-white text-slate-900">
     <Hero />
     <AboutUs />
     <Struktur />
