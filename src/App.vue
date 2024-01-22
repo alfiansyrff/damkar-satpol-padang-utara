@@ -1,10 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-import HelloWorld from './components/HelloWorld.vue';
+import Navbar from './components/layout/Navbar.vue';
+import Footer from './components/layout/Footer.vue';
 </script>
 
 <template>
-  <RouterView />
+  <Navbar />
+  <RouterView class="min-h-screen" />
+  <Footer />
 </template>
 
 <style scoped>
