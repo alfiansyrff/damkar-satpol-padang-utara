@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "feather-icons": "^4.29.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^11.0.5",
     "vue": "^3.3.11",
     "vue-feather": "^2.0.0",

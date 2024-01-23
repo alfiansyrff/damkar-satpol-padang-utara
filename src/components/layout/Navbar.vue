@@ -16,19 +16,20 @@ const show = ref(false);
     <div class="">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a href="#home">Beranda</a>
+          <a @click="scrollToSection('home')">Beranda</a>
         </li>
         <li>
-          <a href="#aboutUs">Tentang Kami</a>
+          <a @click="scrollToSection('aboutUs')">Tentang Kami</a>
         </li>
         <li>
-          <a href="#struktur">Struktur</a>
+          <a @click="scrollToSection('struktur')">Struktur</a>
         </li>
         <li>
-          <a href="#sejarah">Sejarah</a>
+          <a @click="scrollToSection('sejarah')">Sejarah</a>
         </li>
       </ul>
     </div>
+
   </div>
 
   <!-- Mobile -->
@@ -74,6 +75,17 @@ const show = ref(false);
     </div>
   </Transition>
 </template>
+
+<script>
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+export { scrollToSection };
+</script>
 
 <style scoped>
 .v-enter-active,

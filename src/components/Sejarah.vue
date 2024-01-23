@@ -17,7 +17,7 @@ const swiperInstance = ref(null);
 <template>
   <div>
     <div>
-      <h1 class="text-center text-4xl font-semibold" id="sejarah">Sejarah</h1>
+      <h1 class="text-center text-4xl my-5  text-blue-700 font-semibold" id="sejarah">Sejarah</h1>
     </div>
     <div class="md:w-[70%] mx-auto w-[95%]">
       <swiper
