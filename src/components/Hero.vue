@@ -2,10 +2,8 @@
   <div class="bg-padang h-screen flex justify-center items-center" id="home">
     <div class="block md:flex w-[90%] md:w-[70%] h-fit md:h-1/2 bg-slate-200/70 rounded-2xl shadow-lg items-center justify-evenly">
       <img src="../../public/logo.png" alt="logo" class="md:w-1/4 w-1/2 mx-auto md:mx-0 my-2 md:my-0 h-3/4" />
-      <div class="font-league text-2xl font-semibold md:text-4xl text-center">
-        <h1>Satuan Polisi Pamong Praja dan</h1>
-        <h1>Pemadam Kebakaran Kabupaten</h1>
-        <h1>Padang Lawas Utara</h1>
+      <div class="font-league text-3xl font-semibold md:text-5xl text-center">
+        <h1>Paluta sigap Padang lawas utara</h1>
       </div>
     </div>
   </div>

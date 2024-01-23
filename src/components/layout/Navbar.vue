@@ -29,7 +29,6 @@ const show = ref(false);
         </li>
       </ul>
     </div>
-
   </div>
 
   <!-- Mobile -->

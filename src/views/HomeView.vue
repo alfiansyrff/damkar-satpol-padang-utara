@@ -9,7 +9,7 @@ import AboutUs from '@/components/AboutUs.vue';
   <main class="font-sans bg-[#f3f4f5] text-slate-900">
     <Hero />
     <AboutUs />
-    <Struktur />
-    <Sejarah />
+    <Struktur class="my-12" />
+    <Sejarah class="pb-8" />
   </main>
 </template>
