@@ -19,7 +19,7 @@ const show = ref(false);
           <a href="#home">Beranda</a>
         </li>
         <li>
-          <a href="#aboutUs">Tengtang Kami</a>
+          <a href="#aboutUs">Tentang Kami</a>
         </li>
         <li>
           <a href="#struktur">Struktur</a>

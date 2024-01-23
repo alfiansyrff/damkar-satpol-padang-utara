@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h1 class="text-center text-4xl font-semibold" id="struktur">Struktur</h1>
+      <img src="../../../public/struktur.jpeg" alt="Struktur" class="w-12 h-12" />
     </div>
   </div>
 </template>
