@@ -16,9 +16,6 @@ const show = ref(false);
     <div class="">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a @click="scrollToSection('home')">Beranda</a>
-        </li>
-        <li>
           <a @click="scrollToSection('aboutUs')">Tentang Kami</a>
         </li>
         <li>

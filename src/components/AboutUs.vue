@@ -1,5 +1,6 @@
 <template>
-  <div class="about-section mb-5 p-[5em]">
+  <div data-aos="zoom-in-up"
+      data-aos-easing="ease-in" class="about-section mb-5 p-[5em]">
     <div>
       <h1 class="text-center text-4xl font-semibold text-white mb-5" id="aboutUs">Tentang Kami</h1>
       <p class="text-white text-center max-w-md mx-auto">

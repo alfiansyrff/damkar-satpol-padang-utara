@@ -31,9 +31,11 @@ onBeforeUnmount(() => {
 <template>
   <div>
     <div>
-      <h1 class="text-center text-4xl my-5 text-blue-700 font-semibold" id="sejarah">Sejarah</h1>
+      <h1 class="text-center text-4xl my-5 text-blue-700 font-semibold" id="sejarah" data-aos="zoom-up"
+      data-aos-easing="ease-in">Sejarah</h1>
     </div>
-    <div class="md:w-[70%] mx-auto w-[97%]">
+    <div class="md:w-[70%] mx-auto w-[97%]"  data-aos="zoom-up"
+      data-aos-easing="ease-in">
       <swiper
         ref="swiperInstance"
         :slidesPerView="1"
@@ -57,7 +59,7 @@ onBeforeUnmount(() => {
               <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
               <p v-if="!showLinmas" class="w-[97%] text-justify md:text-base text-sm">Pertahanan Sipil atau yang kita kenal sebagai HANSIP ...</p>
               <div class="flex justify-end">
-                <button v-if="!showLinmas" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showLinmas = !showLinmas">Read more..</button>
+                <button v-if="!showLinmas" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showLinmas = !showLinmas">Selengkapnya..</button>
               </div>
               <div v-if="showLinmas" class="text-justify w-[97%] md:text-base text-sm">
                 Pertahanan Sipil atau yang kita kenal sebagai HANSIP merupakan salah satu komponen pendukung dalam konsep pertahanan negara. Pertahanan sipil dimulai dari jaman kolonial Belanda dan didirikan untuk menghadapi serangan dari
@@ -96,7 +98,7 @@ onBeforeUnmount(() => {
               <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
               <p v-if="!showSatpol" class="w-[97%] text-justify md:text-base text-sm">Satuan Polisi Pamong Praja (disingkat Satpol PP) adalah aparatur ...</p>
               <div class="flex justify-end">
-                <button v-if="!showSatpol" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showSatpol = !showSatpol">Read more..</button>
+                <button v-if="!showSatpol" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showSatpol = !showSatpol">Selengkapnya..</button>
               </div>
               <div v-if="showSatpol" class="text-justify w-[97%] md:text-base text-sm">
                 Satuan Polisi Pamong Praja (disingkat Satpol PP) adalah aparatur Pemerintah Daerah Provinsi maupun Kabupaten/kota yang bertujuan memelihara ketenteraman dan ketertiban umum serta menegakkan peraturan. Organisasi dan tata
@@ -138,7 +140,7 @@ onBeforeUnmount(() => {
               <hr class="bg-slate-900 mt-6 h-[0.15rem] w-[95%]" />
               <p v-if="!showDamkar" class="w-[97%] text-justify md:text-base text-sm">Sejarah damkar yang dulu dikenal "Branwir" dari Bahasa Belanda ...</p>
               <div class="flex justify-end">
-                <button v-if="!showDamkar" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showDamkar = !showDamkar">Read more..</button>
+                <button v-if="!showDamkar" class="my-2 btn bg-blue-400 hover:bg-blue-600 text-white font-semibold border-none" @click="showDamkar = !showDamkar">Selengkapnya..</button>
               </div>
 
               <div v-if="showDamkar" class="text-justify w-[97%] md:text-base text-sm">

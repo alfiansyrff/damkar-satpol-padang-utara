@@ -40,7 +40,7 @@
     <hr class="my-6 border-gray-200 sm:mx-auto lg:mt-8 lg:mb-2" />
 
     <!-- Copyright Section -->
-    <div class="text-sm text-white text-center py-2">© 2024 <a href="https://flowbite.com/" class="hover:underline cursor-pointer select-none">Kabupaten Padang Lawas Utara™</a>. All Rights Reserved.</div>
+    <div class="text-sm text-white text-center py-2">© 2024 <a class="hover:underline cursor-pointer select-none">Kabupaten Padang Lawas Utara™</a>. All Rights Reserved.</div>
   </footer>
 </template>
 

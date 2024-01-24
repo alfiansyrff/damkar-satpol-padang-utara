@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "feather-icons": "^4.29.1",
     "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^11.0.5",
